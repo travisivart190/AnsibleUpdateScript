@@ -1,0 +1,10 @@
+---
+  - name: CTF - Denver
+    hosts: [CTF Den]
+    become: true
+    gather_facts: no
+    pre_tasks:
+      - name: Update
+        raw: apt-get -y update
+      - name: Dist-Upgrade
+        raw: apt-get -y dist-upgrade
