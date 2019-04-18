@@ -3,8 +3,8 @@
   become: true
   gather_facts: false
   hosts: 
-    - Den
-  name: "CTF - Denver"
+    - Site1
+  name: "Site - 1"
   pre_tasks: 
     - 
       name: Update
@@ -31,8 +31,8 @@
   become: true
   gather_facts: false
   hosts: 
-    - Colo
-  name: "CTF - Colo"
+    - Site2
+  name: "Site - 2"
   pre_tasks: 
     - 
       name: Update
