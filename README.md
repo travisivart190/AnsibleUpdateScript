@@ -1,5 +1,5 @@
 # AnsibleUpdateScript
-Performs an : apt update, apt dist-upgrade,  reboot, ping test on Machines in Ansible Hosts list
+Performs an : apt update, apt dist-upgrade,  reboot, connectivity test on Machines in Ansible Hosts list
 
 Prerequisites: 
 Python-pip
