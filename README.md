@@ -13,3 +13,5 @@ Finally make sure you change the user in the run.sh script from the given user.
 When these are all complete, make run.sh executable. You now should be able to perform updates on any Linux systems running APT.
 
 Thanks for reading, and browsing my Github!
+
+TRiley
