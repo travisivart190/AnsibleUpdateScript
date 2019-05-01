@@ -3,36 +3,8 @@
   become: true
   gather_facts: false
   hosts: 
-    - Site1
-  name: "Site - 1"
-  pre_tasks: 
-    - 
-      name: Update
-      raw: "apt-get -y update"
-    - 
-      name: Dist-Upgrade
-      raw: "apt-get -y dist-upgrade"
-      register: task_result
-    - 
-      async: 1
-      name: "Reboot immediately if there was a change."
-      poll: 0
-      shell: "sleep 5 && reboot"
-      when: "task_result is changed"
-    - 
-      name: "Wait for the reboot to complete if there was a change."
-      wait_for_connection: 
-        connect_timeout: 20
-        delay: 5
-        sleep: 5
-        timeout: 300
-      when: "task_result is changed"
-- 
-  become: true
-  gather_facts: false
-  hosts: 
-    - Site2
-  name: "Site - 2"
+    - Den
+  name: "CTF - Denver"
   pre_tasks: 
     - 
       name: Update
